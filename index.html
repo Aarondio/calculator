@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+     
+
+     
+        <form name="calform" id="form">
+         <p id="msg" class="text-center"></p>
+          <div class="cal-head">
+            <input
+              type="text"
+              id="screen"
+              name="screen"
+              disabled
+            />
+            <div id="state">On</div>
+          </div>
+          <div class="cal-body">
+          <div>
+            <button class="extra small" value="" onclick="onOff()">
+              <sup>ON</sup><sub>OFF</sub>
+            </button>
+            <button class="extra" onclick="erase()">C</button>
+            <button class="extra" value="%" onclick="square()">√x</button>
+            <button class="operator" value="+" onclick="number('/')">÷</button>
+          </div>
+          <div>
+            <button class="number" value="7" onclick="number(7)">7</button>
+            <button class="number" value="8" onclick="number(8)">8</button>
+            <button class="number" value="9" onclick="number(9)">9</button>
+            <button class="operator" value="x" onclick="number('*')">x</button>
+          </div>
+          <div>
+            <button class="number" value="4" onclick="number(4)">4</button>
+            <button class="number" value="5" onclick="number(5)">5</button>
+            <button class="number" value="6" onclick="number(6)">6</button>
+            <button class="operator" value="-" onclick="number('-')">-</button>
+          </div>
+          <div>
+            <button class="number" onclick="number(1)" value="1">1</button>
+            <button class="number" onclick="number(2)" value="2">2</button>
+            <button class="number" onclick="number(3)" value="3">3</button>
+            <button class="operator" onclick="number('+')">+</button>
+          </div>
+          <div>
+            <button class="zero number" value="0" onclick="number(0)">0</button>
+            <button class="number" value="." onclick="number('.')">.</button>
+            <button class="operator" value="=" onclick="cal()">=</button>
+          </div>
+         </div>
+        </form>
+      </div>
+  
+
+    <script src="script.js"></script>
+  </body>
+</html>
